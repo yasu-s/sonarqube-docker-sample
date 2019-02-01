@@ -1,0 +1,12 @@
+{
+  "git.ignoreLimitWarning": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[typescript]": {
+    "files.trimTrailingWhitespace": true
+  },
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+}
