@@ -3,13 +3,12 @@ import { Component } from '@angular/core';
 import { AppService } from './app.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-root2',
+  templateUrl: './app2.component.html'
 })
-export class AppComponent {
-  title = 'ng-sample';
-  message = '';
+export class App2Component {
+  title = "ng-sample";
+  message = ''
 
   constructor(private appService: AppService) {
 

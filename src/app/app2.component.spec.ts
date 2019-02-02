@@ -1,18 +1,18 @@
 import { TestBed, async, ComponentFixture, fakeAsync, tick } from '@angular/core/testing';
 import { of } from 'rxjs';
 
-import { AppComponent } from './app.component';
+import { App2Component } from './app2.component';
 import { AppService } from './app.service';
 
-describe('AppComponent', () => {
-  let component: AppComponent;
-  let fixture: ComponentFixture<AppComponent>;
+describe('App2Component', () => {
+  let component: App2Component;
+  let fixture: ComponentFixture<App2Component>;
   let appService: AppService;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        App2Component
       ],
       providers: [
         { provide: AppService, useValue: { get: null } }
@@ -21,7 +21,7 @@ describe('AppComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture    = TestBed.createComponent(AppComponent);
+    fixture    = TestBed.createComponent(App2Component);
     component  = fixture.componentInstance;
     appService = TestBed.get(AppService);
     fixture.detectChanges();
@@ -36,17 +36,4 @@ describe('AppComponent', () => {
     // verify
     expect(component.title).toBe('ng-sample1');
   });
-
-  it('onClick', fakeAsync(() => {
-    // setup
-    spyOn(appService, 'get').and.returnValue(of({ memo: 'aaaa' }));
-
-    // exercise
-    component.onClick();
-    tick();
-
-    // verify
-    expect(appService.get).toHaveBeenCalled();
-    expect(component.message).toBe('aaaa');
-  }));
 });

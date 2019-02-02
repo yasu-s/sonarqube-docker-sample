@@ -1,13 +1,19 @@
 # 概要
 
-sonarqube + docker-composeサンプル
+* SonarQubeをDockerComposeで動作させます。
+* SonarScannerで Angular プロジェクトの静的解析・テスト結果を公開します。
 
-# 環境
+# 実行環境
 
 * Docker
 * Docker Compose 
-* SonarScanner
+* Java - Oracle JRE 8
+* Node.js - 10.x
+* Yarn - 1.12.x
 
-## 実行
+# 使用ライブラリ
 
-* `docker-compose up`
+* TypeScript - 3.2.x
+* Angular - 7.2.x
+* TSLint - 5.11.x
+* sonar-scanner - 3.1.x
