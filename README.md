@@ -6,3 +6,8 @@ sonarqube + docker-composeサンプル
 
 * Docker
 * Docker Compose 
+* SonarScanner
+
+## 実行
+
+* `docker-compose up`
