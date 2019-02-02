@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "lint:output": "tslint -t json -o ./dist/tslint-result.json -p ./tsconfig.json"
   },
   "private": true,
   "dependencies": {
