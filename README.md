@@ -59,4 +59,12 @@ yarn sonarqube-scanner
 
 ## 7. Execution result
 
+`http://localhost:9000/`
+
 ![sonarqube](https://user-images.githubusercontent.com/2668146/52160820-58cf3000-26ff-11e9-8903-958e7f502f58.png)
+
+## 8. Exit SonarQube
+
+```
+docker-compose down
+```
