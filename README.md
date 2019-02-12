@@ -1,7 +1,7 @@
 # Overview
 
-* SonarQubeをDockerComposeで動作させます。
-* SonarScannerで Angular プロジェクトの静的解析・テスト結果を公開します。
+* Activate SonarQube with DockerCompose.
+* We will publish static analysis and test results of Angular project with SonarScanner.
 
 # System requirements
 
@@ -16,6 +16,7 @@
 * TypeScript - 3.2.x
 * Angular - 7.2.x
 * TSLint - 5.11.x
+* karma-sonarqube-unit-reporter - 0.0.18
 * sonar-scanner - 3.1.x
 
 # Operation check
